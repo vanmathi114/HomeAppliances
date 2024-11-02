@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 public class Furniture extends Product {
 
-    public Furniture(String Id, String name, int stock, double cost, String model) {
-        super(Id, name, stock, cost, model);
+    public Furniture(String id, String name, int stock, double cost, String model) {
+        super(id, name, stock, cost, model);
     }
 }

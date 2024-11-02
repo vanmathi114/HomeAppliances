@@ -27,6 +27,7 @@ public class FurnitureController {
             }
             return ResponseEntity.ok(furnitures);
         } catch(Exception e) {
+            e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
 
@@ -51,6 +52,7 @@ public class FurnitureController {
             URI uri = URI.create("/api/Furnitures/" + newFurniture.getId());
             return ResponseEntity.created(uri).body(newFurniture);
         } catch(Exception e) {
+            e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
 
